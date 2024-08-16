@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialog1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Atur warna latar belakang dialog -->
+        <item name="android:background">#FFFFFF</item>
+        <!-- Atur warna teks -->
+        <item name="android:textColor">#000000</item>
+        <!-- Atur bentuk sudut -->
+        <item name="android:windowBackground">@drawable/custom_dialog_background</item>
+    </style>
+    <style name="CustomAlertDialog2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/spinnershape</item>
+    </style>
+</resources>

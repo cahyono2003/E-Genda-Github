@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment1"
+    android:background="#D6E3E8">
+
+    <LinearLayout
+        android:id="@+id/linearprofile1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/namaPenggunaTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Nama Pengguna"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center|bottom"
+            android:fontFamily="@font/interbold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="270dp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/linearprofile1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/profile_shape"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/email"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Email"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp"/>
+
+            <ImageButton
+                android:id="@+id/btnEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/button_siku" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/profile_shape"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fluent_phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nomor Telepon"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp"/>
+
+            <ImageButton
+                android:id="@+id/btnTelefon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/button_siku" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/profile_shape"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_table_report"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Riwayat Agenda Saya"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="80dp"
+                android:textSize="18dp"/>
+
+            <ImageButton
+                android:id="@+id/riwayatAgenda"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/button_siku" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:text="Keluar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:background="@drawable/shape_button_keluar"
+            tools:ignore="MissingConstraints"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

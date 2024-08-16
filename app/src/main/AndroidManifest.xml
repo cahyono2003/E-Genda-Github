@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logosmanda"
+        android:label="E-Genda"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EGenda"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".LupaPassword"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatAgendaGuru"
+            android:exported="false" />
+        <activity
+            android:name=".NomorTeleponActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatDetailAgendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AproveAgenda"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNav2"
+            android:exported="false" />
+        <activity
+            android:name=".Success"
+            android:exported="false" />
+        <activity
+            android:name=".MembuatAgenda"
+            android:exported="false" />
+        <activity
+            android:name=".ScanQrCode"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNav1"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

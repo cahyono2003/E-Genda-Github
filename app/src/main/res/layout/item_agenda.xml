@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/shapeitem"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/matapelajaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bahasa Indonesia"
+                android:textSize="20dp"
+                android:fontFamily="@font/interbold"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/statusAprove"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_button_keluar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/jammulai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07:30 AM"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/line"/>
+
+            <TextView
+                android:id="@+id/jamselesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="11:30 AM"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lihatdetail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Lihat Detail"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/shapelihatdetail"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

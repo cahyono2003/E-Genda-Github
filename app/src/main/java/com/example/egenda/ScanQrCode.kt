@@ -32,8 +32,8 @@ import java.util.Calendar
 class ScanQrCode : AppCompatActivity() {
 
     private lateinit var codeScanner: CodeScanner
-    private val schoolLatitude = -6.3342736
-    private val schoolLongitude =  108.3434370
+    private val schoolLatitude = -6.306467
+    private val schoolLongitude =  108.330352
     private val allowedRadius = 500 // Radius dalam meter
     private var currentLatitude: Double = 0.0
     private var currentLongitude: Double = 0.0
